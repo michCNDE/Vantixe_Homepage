@@ -5,6 +5,7 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { StructuredData } from '@/components/layout/StructuredData'
 import { GoogleTagManager } from '@/components/analytics/GoogleTagManager'
+import { LinkedInInsightTag } from '@/components/analytics/LinkedInInsightTag'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -73,6 +74,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <GoogleTagManager />
+        <LinkedInInsightTag />
         <Navbar />
         <main>{children}</main>
         <Footer />
